@@ -6,7 +6,7 @@
 - How to do clustering
 - Function documentation
 - Key functions in the pipeline
-- Other helpful functionsfor
+- Other helpful functions
 - Aux and helper
 - Outdated or obsolete
 
