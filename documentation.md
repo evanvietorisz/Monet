@@ -51,7 +51,7 @@ Next comes the feature computation. These are both done by `computeFeatures4.m`.
 | Residual | residual | Nothing |
 | Distances to nearest neighbors | `distances_to_k_nns` | Z-score\* |
 | Real space vectors to nearest neighbors | `signed_distances` | Divide by average magnitude |
-| Time of beginning of current cell cycle | `beginning_of_current_cell_cycle | Scale to [0,1]\*\* |
+| Time of beginning of current cell cycle | `beginning_of_current_cell_cycle` | Scale to [0,1]\*\* |
 | Time of end of current cell cycle | `end_of_current_cell_cycle` | Scale to [0,1]\*\* |
 | Duration of current cell cycle | `duration_of_current_cell_cycle` | Scale to [0,1]\*\* |
 | Time until next division | `time_until_next_division` | Scale to [0,1]\*\* |
