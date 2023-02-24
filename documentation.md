@@ -48,7 +48,7 @@ Next comes the feature computation. These are both done by `computeFeatures4.m`.
 | First derivative of cell density in LR axis† | `first_deriv_z` | Z-score |
 | Laplacian of cell density (2nd derivative of cell density) | `laplacian` | Z-score |
 | Local normal vector (unit vector) | `local_normal_vector` | Divide by average magnitude |
-| Residual | residual | Nothing |
+| Residual | `residual` | Nothing |
 | Distances to nearest neighbors | `distances_to_k_nns` | Z-score\* |
 | Real space vectors to nearest neighbors | `signed_distances` | Divide by average magnitude |
 | Time of beginning of current cell cycle | `beginning_of_current_cell_cycle` | Scale to [0,1]\*\* |
