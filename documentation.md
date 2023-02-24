@@ -5,10 +5,9 @@
 - How to change the pipeline to load fish embryos
 - How to do clustering
 - Function documentation
-- Key functions in the pipeline
-- Other helpful functions
-- Aux and helper
-- Outdated or obsolete
+    -  Key functions in the pipeline
+    - Other helpful functions
+    - Aux and helper
 
 ---
 
