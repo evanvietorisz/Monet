@@ -322,44 +322,6 @@ for experiment_num = 1:size(clustermatrix,2)
 
 end
 
-
-%{
-
-information desired
-
-pie chart of top lineage
-pie chart of fate
-
-pie chart of fates of terminal progeny**
-
-list of continuous sublineages
-    
-
-terminal fate of progeny
-    hard code rules
-
-terminal progeny only requires cell name
-compute proportion from dataset or 
-
-
-
-
-for all things
-preprocessing
-    go through all cells in emb, figure out what designation type X, lin X,
-    PROGENITOR TYPE type, time all come from X. store.
-
-    for each clustering
-        for each cluster
-            for each property
-                isolate entry for that property for each cell in cluster
-                group counts
-                    use as labels, counts for the pie chart
-
-%}
-
-
-
 %%
 
 %statistics
@@ -373,8 +335,6 @@ end
 %%
 
 %looking for continuous sublineages
-
-%not really finding the sublineage--cheating 
 
 min_length = 3; %number of generations that counts as a legitimate sublineage
 threshold = .1; %percent of the cells in the cluster that have to come from the sublineage
@@ -434,7 +394,7 @@ end
 %%
 
 
-%doing progenitor fates
+%progenitor fates
 
 fates_to_look_for = ["pharynx";
                      "neuron";
@@ -626,37 +586,6 @@ end
 %%
 
 %10/26
-
-%idea: use the coarse binnings as y axis for 'sublineages over time' plot
-%   color corresponds to whether clonal fate. still suffers from issue that
-%   things are not defined enough and many cells go unclassified. details
-%   below
-
-%{
-
-for each experiment
-for each cluster
-
-get the cells in the cluster
-determine what sublineage they belong to
-detemine if clonal fate (currently flawed). If so, what fate
-
-make the scatters
-
-
-put on hold for something simpler
-
-%}
-
-%%
-
-% 10/26
-
-%coarse plots don't show time or space, so address them directly.
-
-%time
-
-%scatter showing what time points each cluster draws from
 
 embS = emb.embeddingStruct;
 
@@ -1265,17 +1194,6 @@ sgtitle('dispim emb 2 (through comma) last timepoint (570 cells)')
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 %%
 
 %10/26
@@ -1523,47 +1441,6 @@ end
 sgtitle('number of time-cells (b) and unique cell IDs (o) in each cluster (early October Louvain clustering) Oct 26')
 
 
-
-%%
-
-%{
-
-%matrix to store numbers 
-%   rows are *unique* cell names 
-%   columns are experiments 1:10
-%   entries are numbers of distinct clusters that cell ID falls into
-
-
-%make matrix
-
-vals_matrix = zeros(length(ordered_names_unique),number_of_experiments)
-
-for unique_cell_id 1:1224 (length(ordered_names_unique)
-
-    for experiment_num  =  1:10
-
-        number_of_distinct_clusters = length(unique(clustermatrix((all_names =
-        unique_cell_id),experiment_num)))
-        
-        vals_matrix(unique_cell_id,experiment_num) =
-        number_of_distinct_clusters;
-
-    end
-
-end
-
-%define the specific set of cells you label
-    over length of unique_names, set to '' unless it's not a predetermined
-    list of cells
-
-%make the plots
-for i = 1:number_of_experiments
-
-    subplot(10,i)
-    bar graph of the stuff
-
-
-%}
 
 %%
 
